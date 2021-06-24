@@ -7,9 +7,21 @@ import './App.css';
 //   return <Ejemplo />
 // }
 
-import HTTPRequest from './containers/HttpRequest/HTTRequest';
+// import HTTPRequest from './containers/HttpRequest/HTTRequest';
+// import Counter from './containers/Counter/Counter';
+// import CustomHook from './containers/CustomHook/CustomHook';
+// import Forms from './containers/Forms/Forms';
+// import ReduxUdemy from './containers/ReduxUdemy/ReduxUdemy';
+import ReduxDeeperUdemy from './containers/ReduxDeeperUdemy/ReduxDeeperUdemy';
 const App = () =>{
-  return <HTTPRequest />
+  return <div className="App">
+      {/* <HTTPRequest /> */}
+      {/* <Counter /> */}
+      {/* <CustomHook /> */}
+      {/* <Forms /> */}
+      {/* <ReduxUdemy /> */}
+      <ReduxDeeperUdemy />
+    </div>
 }
 
 // import LoginContainer from './containers/Login/LoginContainer';
