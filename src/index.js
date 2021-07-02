@@ -8,10 +8,14 @@ import {Provider} from 'react-redux';
 // import store from './store/index';
 import storeDeeper from './store/indexDeeper';
 
+import {BrowserRouter} from 'react-router-dom';
+
 ReactDOM.render(
-    <Provider store={storeDeeper}>
-        <App />
-    </Provider>
+    <BrowserRouter>
+        <Provider store={storeDeeper}>
+            <App />
+        </Provider>
+    </BrowserRouter>
     , document.getElementById('root')
 );
 
