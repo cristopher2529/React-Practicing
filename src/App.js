@@ -14,7 +14,8 @@ import './App.css';
 // import ReduxUdemy from './containers/ReduxUdemy/ReduxUdemy';
 // import ReduxDeeperUdemy from './containers/ReduxDeeperUdemy/ReduxDeeperUdemy';
 // import Routers from './containers/Routers/Routers';
-import RouterDemo from './containers/RouterDemo/RouterDemo';
+// import RouterDemo from './containers/RouterDemo/RouterDemo';
+import UdemyAuth from './containers/UdemyAuth/UdemyAuth';
 const App = () => {
   return <div className="App">
     {/* <HTTPRequest /> */}
@@ -24,7 +25,8 @@ const App = () => {
     {/* <ReduxUdemy /> */}
     {/* <ReduxDeeperUdemy /> */}
     {/* <Routers /> */}
-    <RouterDemo />
+    {/* <RouterDemo /> */}
+    <UdemyAuth />
   </div>
 }
 

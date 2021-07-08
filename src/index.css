@@ -37,6 +37,15 @@ p {
     color: #042b5f;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', sans-serif;
+}
+
 .centered {
     margin: 3rem auto;
     text-align: center;
