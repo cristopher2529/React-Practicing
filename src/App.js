@@ -15,7 +15,8 @@ import './App.css';
 // import ReduxDeeperUdemy from './containers/ReduxDeeperUdemy/ReduxDeeperUdemy';
 // import Routers from './containers/Routers/Routers';
 // import RouterDemo from './containers/RouterDemo/RouterDemo';
-import UdemyAuth from './containers/UdemyAuth/UdemyAuth';
+// import UdemyAuth from './containers/UdemyAuth/UdemyAuth';
+import ReplacerReduxforHooks from './containers/replacerReduxforHooks/ReplacerReduxforHooks';
 const App = () => {
   return <div className="App">
     {/* <HTTPRequest /> */}
@@ -26,7 +27,8 @@ const App = () => {
     {/* <ReduxDeeperUdemy /> */}
     {/* <Routers /> */}
     {/* <RouterDemo /> */}
-    <UdemyAuth />
+    {/* <UdemyAuth /> */}
+    <ReplacerReduxforHooks />
   </div>
 }
 
