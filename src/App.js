@@ -16,7 +16,8 @@ import './App.css';
 // import Routers from './containers/Routers/Routers';
 // import RouterDemo from './containers/RouterDemo/RouterDemo';
 // import UdemyAuth from './containers/UdemyAuth/UdemyAuth';
-import ReplacerReduxforHooks from './containers/replacerReduxforHooks/ReplacerReduxforHooks';
+// import ReplacerReduxforHooks from './containers/replacerReduxforHooks/ReplacerReduxforHooks';
+import UnitTest from './containers/UnitTest/UnitTest';
 const App = () => {
   return <div className="App">
     {/* <HTTPRequest /> */}
@@ -28,7 +29,8 @@ const App = () => {
     {/* <Routers /> */}
     {/* <RouterDemo /> */}
     {/* <UdemyAuth /> */}
-    <ReplacerReduxforHooks />
+    {/* <ReplacerReduxforHooks /> */}
+    <UnitTest />
   </div>
 }
 
