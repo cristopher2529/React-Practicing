@@ -1,12 +1,11 @@
-import React from 'react';
-import classes from './ErrorModal.module.css'
+import React from "react";
+import classes from "./ErrorModal.module.css";
 
-const ErrorModal = React.memo(props => {
-
+const ErrorModal = React.memo((props) => {
     return (
         <React.Fragment>
             <div className={classes.backdrop} onClick={props.onClose} />
-            <div className={classes['error-modal']}>
+            <div className={classes["error-modal"]}>
                 <h2>Ah Error Occurred!</h2>
                 <p>{props.children}</p>
                 <div className={classes["error-modal__actions"]}>
@@ -15,8 +14,10 @@ const ErrorModal = React.memo(props => {
                     </button>
                 </div>
             </div>
+
+            <div className="classes"></div>
         </React.Fragment>
     );
-})
+});
 
 export default ErrorModal;
