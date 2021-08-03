@@ -194,6 +194,46 @@ const includeItem = items.includes(item);
 const includeItem2 = items.includes(item2);
 console.log(includeItem, includeItem2);
 
+//Encapsulacion
+function CrearUsuario(n) {
+    let nombre = n;
+
+    return {
+        setNombre: function (newN) {
+            nombre = newN;
+        },
+        getNombre: () => console.log(nombre),
+    };
+}
+const usuario = CrearUsuario("Cris");
+usuario.getNombre();
+usuario.setNombre("Elias");
+usuario.getNombre();
+
+const outerFunction = (outerVariable) => {
+    return function innerFunction(innerVariable) {
+        console.log(`Outer Variable: ${outerVariable}`);
+        console.log(`Inner Variable: ${innerVariable}`);
+    };
+};
+const newFunction = outerFunction("outside");
+newFunction("inside");
+
+//Set y GET
+const persona = {
+    nombre: "",
+    edad: 0,
+    get nombre() {
+        return this.nombre_value.toUpperCase();
+    },
+    set nombre(newNombre) {
+        this.nombre_value = newNombre;
+    },
+};
+const cris = persona;
+cris.nombre = "Cristopher";
+console.log(cris.nombre);
+
 console.log("%cPromises", "font-weight:bold; color:#ccc; font-size:2rem;");
 {
     //Promises
@@ -239,4 +279,21 @@ console.log("%cPromises", "font-weight:bold; color:#ccc; font-size:2rem;");
         console.log(await recordVideo3);
     };
     asyncFun();
+
+    const datos = [
+        { id: 1, product: "Laptop", price: 10 },
+        { id: 2, product: "PC", price: 15 },
+    ];
+    const getDatos = () => {
+        return new Promise((resolve, reject) => {
+            if (datos.length === 0) reject("No existen datos");
+
+            setTimeout(() => resolve(datos), 1500);
+        });
+    };
+    getDatos().then((datos) => console.log(datos));
+    const getData = async () => {
+        console.log(await getDatos());
+    };
+    getData();
 }

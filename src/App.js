@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 // import {useState} from 'react';
-import './App.css';
+import "./App.css";
 
 // import Ejemplo from './containers/Ejemplo/Ejemplo';
 // const App = () => {
@@ -18,23 +18,28 @@ import './App.css';
 // import UdemyAuth from './containers/UdemyAuth/UdemyAuth';
 // import ReplacerReduxforHooks from './containers/replacerReduxforHooks/ReplacerReduxforHooks';
 // import UnitTest from './containers/UnitTest/UnitTest';
-import ResumeHooks from './containers/ResumeHooks/ResumeHooks';
+// import ResumeHooks from './containers/ResumeHooks/ResumeHooks';
+import LocalStorage from "./containers/localStorage/LocalStorage";
+
 const App = () => {
-  return <div className="App">
-    {/* <HTTPRequest /> */}
-    {/* <Counter /> */}
-    {/* <CustomHook /> */}
-    {/* <Forms /> */}
-    {/* <ReduxUdemy /> */}
-    {/* <ReduxDeeperUdemy /> */}
-    {/* <Routers /> */}
-    {/* <RouterDemo /> */}
-    {/* <UdemyAuth /> */}
-    {/* <ReplacerReduxforHooks /> */}
-    {/* <UnitTest /> */}
-    <ResumeHooks />
-  </div>
-}
+    return (
+        <div className="App">
+            {/* <HTTPRequest /> */}
+            {/* <Counter /> */}
+            {/* <CustomHook /> */}
+            {/* <Forms /> */}
+            {/* <ReduxUdemy /> */}
+            {/* <ReduxDeeperUdemy /> */}
+            {/* <Routers /> */}
+            {/* <RouterDemo /> */}
+            {/* <UdemyAuth /> */}
+            {/* <ReplacerReduxforHooks /> */}
+            {/* <UnitTest /> */}
+            {/* <ResumeHooks /> */}
+            <LocalStorage />
+        </div>
+    );
+};
 
 // import LoginContainer from './containers/Login/LoginContainer';
 // import {AuthContextProvider} from './context/auth-context';
@@ -119,7 +124,6 @@ const App = () => {
 // import Expenses from './containers/Expenses/Expenses';
 // import NewExpense from './component/NewExpense/NewExpense';
 
-
 // const App = () => {
 //   const [expenses, setExpense] = useState([
 //     {
@@ -152,8 +156,6 @@ const App = () => {
 //     })
 //   }
 
-
-
 //   return (
 //     <div className="App">
 //   {/*     <h1>Pacticing2</h1> */}
@@ -165,7 +167,6 @@ const App = () => {
 // }
 
 export default App;
-
 
 /* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
